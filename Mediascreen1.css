@@ -1,0 +1,189 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: white;
+  padding: 15px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#div1 img {
+
+  height: 45px;
+  margin-left: 35px;
+
+}
+
+#div2 ul {
+
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  list-style: none;
+
+}
+
+#div2 ul li {
+  user-select: none;
+  transition: 0.3s;
+}
+
+#div2 ul li:hover {
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgb(50, 50, 201);
+  color: ghostwhite;
+  border-radius: 50px;
+
+}
+
+#div3 input {
+
+  height: 80%;
+  width: 100%;
+  padding: 5px;
+  border: 2px solid rgb(186, 184, 184);
+  border-radius: 50px;
+  font-size: 15px;
+
+}
+
+
+main {
+  height: 550px;
+  display: flex;
+  column-gap: 10px;
+
+}
+
+#box1 {
+  /* border: 2px solid red; */
+  height: 50%;
+  width: 50%;
+  margin-top: 150px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+}
+
+#box1 h1 {
+  font-size: 40px;
+}
+
+#box1 span {
+  color: var(--c);
+}
+
+#box1 p {
+  width: 78%;
+}
+
+#box1 button {
+  border-radius: 5px;
+  border-style: none;
+  padding: 10px;
+  width: 160px;
+  font-size: 15px;
+  background-color: rgb(50, 50, 201);
+  box-shadow: 0px 1px 1px 1px rgb(50, 50, 201);
+  color: white;
+  transition: 0.3s;
+}
+
+#box1 button:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+
+#box2 {
+  /* border: 2px solid red; */
+  height: 100%;
+  width: 50%;
+
+}
+
+#box2 img {
+  height: 400px;
+  margin-top: 80px;
+
+}
+
+.box {
+  height: 400px;
+  width: auto;
+  background-color: ghostwhite;
+  color: white;
+
+}
+
+#content {
+  /* border: 2px solid red; */
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card {
+  height: 300px;
+  width: 400px;
+  transition: 0.3s;
+
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+
+}
+
+.card:hover {
+
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+  nav {
+
+    flex-direction: column;
+    height: fit-content;
+    row-gap: 30px;
+    margin-left: 400px;
+    
+  }
+
+  #div3 input {
+
+    width: 300px;
+  }
+}
+
+@media screen and (max-width:868px) {
+  #content{
+
+    flex-direction: column;
+    height: fit-content;
+    row-gap: 80px;
+    margin-top: 200px;
+    margin-left: 400px;
+
+  }
+}
